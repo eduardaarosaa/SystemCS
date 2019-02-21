@@ -1,0 +1,47 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.navbar{
+	background-color:#C0C0C0!important;
+}
+.cards{
+	margin-top: 3%!important;
+}
+.btn-primary{
+	background-color:#931F23!important;
+	border-color:#931F23!important;
+}
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('https://media.giphy.com/media/LukAHGCMfxMbK/giphy.gif') 50% 50% no-repeat white;
+}
+.table-secondary, .table-secondary>td, .table-secondary>th{
+	background-color:#AF1D23!important;
+	font-color:white!important;
+}
+.table td, .table th{
+	border-color:#fff!important;
+	color:#fff!important;
+}
+.sair{
+	font-size:14pt;
+	font-weight: bold;
+	color:#000;
+}
+.bem{
+	margin-top: 2%!important;
+}
+.margem{
+	margin-top: 5%!important;
+}
+.jumbotron{
+	margin-bottom: 0!important;
+	background-color: #fff!important;
+	padding: 0%!important;
+}
