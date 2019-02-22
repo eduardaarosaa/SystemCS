@@ -3,6 +3,24 @@
 
 <div style="display:none" id="tudo_page">
  
+<?php
+
+if ( $this->session->userdata('login') == true ) {  
+
+
+		$nome = $this->session->userdata('nome');
+		$nivel = $this->session->userdata('nivel');
+   
+} else { 
+
+	redirect("Controller_painel/acesso", 'redirect');
+
+	
+	} 
+
+
+?> 
+
  <div class="container">
  <div class="row">
  <div class="col-md-12">
@@ -31,22 +49,15 @@
       <td><?php echo $rows->telefone;?></td>
       <td><?php 
 
-      $estado = substr($rows->telefone,0,5);
+      $estado = substr($rows->telefone,0,4);
 
      // echo $estado;
 
-      if($estado == ";5511"){
-        
-
-        echo "São Paulo";
-      }else{
-        echo "Estado não encontrada";
-      }
-
+     
       ?></td>
       <td><?php
 
-      $pais = substr($rows->telefone,0,3);
+      $pais = substr($rows->telefone,0,4);
 
       if($pais == ";55"){
 

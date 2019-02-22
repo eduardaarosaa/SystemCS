@@ -2,18 +2,19 @@
 <div style="display:none" id="tudo_page">
 <body>
 
-	<?php
+<?php
 
 if ( $this->session->userdata('login') == true ) {  
 
 
-    $nome = $this->session->userdata('nome');
+		$nome = $this->session->userdata('nome');
+		$nivel = $this->session->userdata('nivel');
    
 } else { 
 
 	redirect("Controller_painel/acesso", 'redirect');
 
-
+	
 	} 
 
 
@@ -23,9 +24,11 @@ if ( $this->session->userdata('login') == true ) {
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
-			<?php
-			 echo "<p class='bem'> Olá " . $this->session->userdata('nome') . "</p>"; 
-			 ?>
+
+		<?php
+			 echo '<p class="bem"> Olá ' . $this->session->userdata("nome") . '</p>';
+			 //echo $this->session->userdata('nivel'); 
+			?>
 		</div>
 
 
@@ -36,7 +39,7 @@ if ( $this->session->userdata('login') == true ) {
   <div class="container">
     <h5 class="display-5">Saúde dos Clientes:</h5>
     <br>
-		<?php 
+	<?php
 		//$media está vindo de um select na função painel
 		// Esse select está trazendo a média do campo questao7 que é a nota por atendimento
 		//$media retorna um objeto 
@@ -50,9 +53,9 @@ if ( $this->session->userdata('login') == true ) {
 		}elseif($string>=5 or $media<=6){
 			echo "<img src='../../img/maisoumenos.png' width='100px'>";
 		}else{
-			echo "<img src='../../img/triste.png' width='100px'>";
+			echo "<img src='../../img/triste.png' width='100p'>";
 		}
-		?>
+?>
     
   </div>
 </div>
@@ -163,11 +166,11 @@ if ( $this->session->userdata('login') == true ) {
 	</div>
 	</div>
 </div>
+
 </div>
 </div>
 </div>
 <br><br>
-
 </body>
 <script>
 

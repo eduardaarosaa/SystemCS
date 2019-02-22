@@ -2,7 +2,23 @@
 
 
 <div style="display:none" id="tudo_page">
- 
+<?php
+
+if ( $this->session->userdata('login') == true ) {  
+
+
+		$nome = $this->session->userdata('nome');
+		$nivel = $this->session->userdata('nivel');
+   
+} else { 
+
+	redirect("Controller_painel/acesso", 'redirect');
+
+	
+	} 
+
+
+?> 
  <div class="container">
  <div class="row">
  <div class="col-md-12">

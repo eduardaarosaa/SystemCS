@@ -1,3 +1,20 @@
+<?php
+
+if ( $this->session->userdata('login') == true ) {  
+
+
+		$nome = $this->session->userdata('nome');
+		$nivel = $this->session->userdata('nivel');
+   
+} else { 
+
+	redirect("Controller_painel/acesso", 'redirect');
+
+	
+	} 
+
+
+?> 
 <div class="container">
     <div class="row top">
         <div class="col-md-12">
@@ -5,7 +22,7 @@
              echo form_open_multipart('Controller_painel/adduser');
            ?>
   <div class="form-group">
-    <label for="exampleInputEmail1">Adicionar um usuário</label>
+    <label for="exampleInputEmail1 margem">Adicionar um usuário</label>
     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="nome" placeholder="Nome do Usuário">
 
   </div>

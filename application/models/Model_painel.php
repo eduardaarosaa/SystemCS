@@ -130,12 +130,12 @@ public function ver_contato(){
 //Função que consulta o banco de dados e retorna quais foram os dados extraídos da API Bitvalor
 public function ver_mercado(){
 
-  return $this->db->query("Select * from dados")->result();
+  return $this->db->query("Select * from dados where yearweek(data) = yearweek(now())-1")->result();
 }
 //Função que consulta o banco de dados e retorna os dados da API Bitvalor para gerar planilha
 public function gerar_mercado(){
 
-  return $this->db->query("Select * from dados")->result();
+  return $this->db->query("Select * from dados where yearweek(data) = yearweek(now())-1")->result();
 
 }
 public function gerar_resolvidas(){

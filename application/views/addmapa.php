@@ -1,3 +1,20 @@
+<?php
+
+if ( $this->session->userdata('login') == true ) {  
+
+
+		$nome = $this->session->userdata('nome');
+		$nivel = $this->session->userdata('nivel');
+   
+} else { 
+
+	redirect("Controller_painel/acesso", 'redirect');
+
+	
+	} 
+
+
+?> 
 <div class="container">
     <div class="row top">
         <div class="col-md-12">
@@ -24,7 +41,9 @@
   <div class="form-group">
     <input type="text" class="form-control" id="exampleInputPassword1" name="questao6" placeholder="Seus ganhos">
   </div>
-
+  <div class="form-group">
+    <input type="text" class="form-control" id="exampleInputPassword1" name="questao7" placeholder="Nota de saúde">
+  </div>
   <button type="submit" class="btn btn-primary">Salvar</button>
   <button type="reset" class="btn btn-primary">Limpar</button>
 

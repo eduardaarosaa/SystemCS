@@ -59,9 +59,12 @@ class controller_painel extends CI_Controller {
 					'id'=> $auth->id,
                                         'nome'=>$auth->nome,
                                         'email'=>$auth->email,
+                                        'nivel'=>$auth->nivel,
                                          'login' => true
+                                         
                                         
-				);
+                );
+                
             
             $media['media'] = $this->Model_painel->media();
 	         $this->session->set_userdata($sessao);
