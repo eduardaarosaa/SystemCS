@@ -1,3 +1,4 @@
+
 <?php
 
 if ( $this->session->userdata('login') == true ) {  
@@ -14,7 +15,12 @@ if ( $this->session->userdata('login') == true ) {
 	} 
 
 
-?> 
+?>
+<div id="loader" class="loader"></div>
+
+
+<div style="display:none" id="tudo_page">
+
 <div class="container">
 <div class="row cards">
 	<div class="col-md-4">
@@ -69,3 +75,11 @@ if ( $this->session->userdata('login') == true ) {
   <a href="painel"><button class="btn btn-primary cards">Voltar</button></a>
   </div>
 </div>
+<script>
+
+jQuery(window).load(function () {
+      $(".loader").delay(1200).fadeOut("slow"); //retire o delay quando for copiar!
+    $("#tudo_page").toggle("fast");
+});
+
+</script>

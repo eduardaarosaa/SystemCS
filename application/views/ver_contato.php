@@ -22,7 +22,7 @@ if ( $this->session->userdata('login') == true ) {
  <div class="container">
  <div class="row">
  <div class="col-md-12">
-<p class="titulo">Mapa de processo de empatia</p>
+<p class="titulo">Primeiro contato</p>
 
 <a href="gerar_mapa"><button class="btn btn-primary">Gerar Planilha</button></a>
 <br>
