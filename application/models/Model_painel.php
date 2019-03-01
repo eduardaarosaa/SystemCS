@@ -157,5 +157,17 @@ public function gerar_conversao(){
 public function media(){
   return $this->db->query("Select AVG(questao7) from mapa")->result();
 }
+
+public function ver_indice_nacional(){
+  return $this->db->query("Select * from indice")->result();
+}
+
+public function ver_cotacao_internacional(){
+  return $this->db->query("Select * from bitstamp")->result();
+}
+public function dolar(){
+  return $this->db->query("Select * from cotacao_dolar")->result();
+}
+
     }
     

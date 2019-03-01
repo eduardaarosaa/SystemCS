@@ -17,6 +17,7 @@ foreach ($array_keys as $key) {
 print( $key . "\n" );
 print( "=====================\n" );
 
+
 $vol = $exchanges->{$key}->vol;
 $last = $exchanges->{$key}->last;
 $trade = $exchanges->{$key}->trades;

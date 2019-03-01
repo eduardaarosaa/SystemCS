@@ -127,7 +127,7 @@ if ( $this->session->userdata('login') == true ) {
 		 <div class="card-body">
     <h5 class="card-title">Inteligência de Mercado</h5>
     <p class="card-text">Caso você queria análisar como anda o mercado de criptomoeda através das corretoras clique aqui.</p>
-    <a href="ver_mercado" class="btn btn-primary">Ver mercado</a>
+    <a href="inteligencia1" class="btn btn-primary">Ver mercado</a>
 
   </div>
 

@@ -482,6 +482,29 @@ public function addleads(){
         $this->load->view('gerarmercado',$gerar_mercado);
     }
 
+    public function inteligencia1(){
+
+        $this->load->view('header');
+        $this->load->view('inteligencia1');
+
+    }
+
+    public function ver_indice_nacional(){
+        $dados['dados'] = $this->Model_painel->ver_indice_nacional();
+        $this->load->view('header');
+        $this->load->view('ver_indice_nacional',$dados);
+        
+    }
+
+    public function ver_cotacao_internacional(){
+
+        $dados['dados'] = $this->Model_painel->ver_cotacao_internacional();
+        $dolar['dolar'] =  $this->Model_painel->dolar();
+        $this->load->view('header');
+        $this->load->view('ver_cotacao_internacional',$dados,$dolar);
+
+    }
+
     
 
 }
