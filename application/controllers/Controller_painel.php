@@ -500,9 +500,16 @@ public function addleads(){
 
         $dados['dados'] = $this->Model_painel->ver_cotacao_internacional();
         $dolar['dolar'] =  $this->Model_painel->dolar();
-        $this->load->view('header');
-        $this->load->view('ver_cotacao_internacional',$dados,$dolar);
+        $this->load->view('header',$dados);
+        $this->load->view('ver_cotacao_internacional',$dolar);
 
+    }
+
+    public function media_indice(){
+    
+        $dados['dados']= $this->Model_painel->media_indice();
+        $this->load->view('header');
+        $this->load->view('media',$dados);
     }
 
     

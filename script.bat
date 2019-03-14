@@ -1,0 +1,1 @@
+"C:\xampp1\php\php.exe" - f "C:\xampp1\htdocs\sistema\conexao_1.php"

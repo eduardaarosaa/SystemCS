@@ -54,6 +54,19 @@ if ( $this->session->userdata('login') == true ) {
   </div>
 	</div>
 	</div>
+	</div>
+	<div class="row cards">
+	<div class="col-md-4">
+		<div class="card" style="width: 18rem;">
+ 
+ 	 <div class="card-body">
+    <h5 class="card-title">Média das corretoras brasileiras</h5>
+    <p class="card-text">Acompanhe a média do preço do BTC</p>
+    <a href="media_indice" class="btn btn-primary">acompanhar</a>
+  </div>
+</div>
+</div>
+	</div>
 </div>
 
 	
