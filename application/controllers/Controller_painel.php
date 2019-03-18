@@ -499,9 +499,8 @@ public function addleads(){
     public function ver_cotacao_internacional(){
 
         $dados['dados'] = $this->Model_painel->ver_cotacao_internacional();
-        $dolar['dolar'] =  $this->Model_painel->dolar();
-        $this->load->view('header',$dados);
-        $this->load->view('ver_cotacao_internacional',$dolar);
+        $this->load->view('header');
+        $this->load->view('ver_cotacao_internacional',$dados);
 
     }
 

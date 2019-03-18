@@ -28,7 +28,7 @@
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
 html,body{
-background-image: url('https://www.criptomoedasfacil.com/wp-content/uploads/2018/09/shutterstock_1018654609.jpg');
+background-image: url('https://coinrevolution.com/wp-content/uploads/2018/11/shutterstock_1018654609.jpg')!important;
 background-size: cover;
 background-repeat: no-repeat;
 height: 100%;

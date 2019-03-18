@@ -163,7 +163,7 @@ public function ver_indice_nacional(){
 }
 
 public function ver_cotacao_internacional(){
-  return $this->db->query("SELECT valor FROM bitstamp ORDER BY id DESC LIMIT 1 ")->result();
+  return $this->db->query("SELECT valor FROM internacional ORDER BY id DESC LIMIT 1 ")->result();
 }
 public function dolar(){
   return $this->db->query("SELECT valor FROM cotacao_dolar ORDER BY id DESC LIMIT 1")->result();
