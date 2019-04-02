@@ -174,8 +174,17 @@ if ( $this->session->userdata('login') == true ) {
 		 <div class="card-body">
     <h5 class="card-title">Playbook</h5>
     <p class="card-text">O Playbooks é um guia de ações em caso de exceções.​</p>
-    <a href="#" class="btn btn-primary">Adicionar</a>
-		<a href="#" class="btn btn-primary">Ver resultados</a>
+    <a href="playbooks" class="btn btn-primary">Adicionar</a>
+		<a href="playbooks" class="btn btn-primary">Ver resultados</a>
+	</div>
+	</div>
+	</div>
+	<div class="col-md-4">
+<div class="card" style="width: 18rem;">
+		 <div class="card-body">
+    <h5 class="card-title">Relátorios</h5>
+    <p class="card-text">Veja os relatórios</p>
+		<a href="relatorios" class="btn btn-primary">Ver resultados</a>
 	</div>
 	</div>
 	</div>

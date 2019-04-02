@@ -511,6 +511,44 @@ public function addleads(){
         $this->load->view('media',$dados);
     }
 
-    
+    public function extrato_internacional(){
 
+        $dados['dados'] = $this->Model_painel->extrato_internacional();
+        $this->load->view('header');
+        $this->load->view('extrato_internacional',$dados);
+    }
+    
+    public function playbooks(){
+        $this->load->view('header');
+        $this->load->view('playbooks');
+    }
+
+    public function relatorios(){
+        $this->load->view('header');
+        $this->load->view("relatorios");
+    }
+
+    public function extrair_empatia(){
+        $this->load->view("header");
+        $this->load->view("extrair_empatia");
+    }
+    public function extrair_mercado(){
+
+
+        //$tipo['tipo'] = $this->Model_painel->gerar_inteligencia();
+        $this->load->view("header");
+        $this->load->view("extrair_mercado");
+
+    }
+
+    public function gerar_inteligencia(){
+
+
+        $dados['dados'] = $this->Model_painel->gerar_inteligencia();
+        //$this->load->view("header");
+        $this->load->view('resultado_mercado',$dados);
+
+    }
+
+   
 }

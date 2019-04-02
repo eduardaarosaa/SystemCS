@@ -30,7 +30,7 @@ if ( $this->session->userdata('login') == true ) {
  	 <div class="card-body">
     <h5 class="card-title">Volume e valores das corretoras nacionais</h5>
     <p class="card-text">Acompanhe como está o mercado por corretora</p>
-    <a href="ver_mercado" class="btn btn-primary">acompanhar</a>
+    <a href="ver_mercado" class="btn btn-primary">Avercompanhar</a>
   </div>
 </div>
 </div>
@@ -47,8 +47,8 @@ if ( $this->session->userdata('login') == true ) {
 	<div class="col-md-4">
 		<div class="card" style="width: 18rem;">
 		 <div class="card-body">
-    <h5 class="card-title">Cotação do índice nacionalmente</h5>
-    <p class="card-text">Veja o índice do bitcoin nacional</p>
+    <h5 class="card-title">Extrato das cotações do índice nacionalmente</h5>
+    <p class="card-text">Veja o extrato do índice do bitcoin nacional</p>
     <a href="ver_indice_nacional" class="btn btn-primary">Acompanhar</a>
 
   </div>
@@ -62,9 +62,21 @@ if ( $this->session->userdata('login') == true ) {
  	 <div class="card-body">
     <h5 class="card-title">Média das corretoras brasileiras</h5>
     <p class="card-text">Acompanhe a média do preço do BTC</p>
-    <a href="media_indice" class="btn btn-primary">acompanhar</a>
+    <a href="media_indice" class="btn btn-primary">Acompanhar</a>
   </div>
 </div>
+
+</div>
+<div class="col-md-4">
+		<div class="card" style="width: 18rem;">
+ 
+ 	 <div class="card-body">
+    <h5 class="card-title">Extrato das cotações internacionais de índice</h5>
+    <p class="card-text">Veja o extrato com o índice da cotação internacional</p>
+    <a href="extrato_internacional" class="btn btn-primary">Acompanhar</a>
+  </div>
+</div>
+
 </div>
 	</div>
 </div>

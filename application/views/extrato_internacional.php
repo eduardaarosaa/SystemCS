@@ -24,7 +24,7 @@ if ( $this->session->userdata('login') == true ) {
  <div class="container">
  <div class="row">
  <div class="col-md-12">
-<p class="titulo margem">Acompanhamento das Concorrentes</p>
+<p class="titulo margem">Acompanhamento da Bitstamp internacional</p>
 
 <a href="gerar_mercado"><button class="btn btn-primary">Gerar Planilha</button></a>
 <br>
@@ -36,9 +36,6 @@ if ( $this->session->userdata('login') == true ) {
       <th scope="col">Corretora</th>
       <th scope="col">Volume</th>
       <th scope="col">Preço</th>
-      <th scope="col">Trades</th>
-      <th scope="col">Volume máx</th>
-      <th scope="col">Volume mín</th>
       <th scope="col">Data</th>
 
 
@@ -48,49 +45,21 @@ if ( $this->session->userdata('login') == true ) {
   </thead>
   <tbody>
     <tr>
-      <?php 
+    <?php
 
-      foreach ($dados as $rows){ ?> 
-      <td><?php 
+    
+    foreach ($dados as $rows){ ?>
 
-      if($rows->nome == "WAL"){
-
-        echo "Walltime";
-      }elseif($rows->nome == "B2U"){
-
-        echo "BitcoinToYou";
-
-      }elseif($rows->nome == "CAM"){
-
-
-      echo "BitCambio";
-
-    }elseif($rows->nome == "BZX"){
-
-      echo "Braziliex";
-    }elseif($rows->nome == "MBT"){
-
-      echo "Mercado Bitcoin";
-
-    }elseif($rows->nome == "BTD"){
-
-      echo "BitcoinTrade";
-      }
-
-  else{
-
-
-
-      echo $rows->nome;
-}
+    <td><?php
+      
+      echo "Bitstamp";
+    
       ?>
 
       </td>
       <td><?php echo round($rows->volume);?></td>
-      <td><?php echo "R$" . number_format( $rows->preco, '2',',','.');?></td>
-      <td><?php echo $rows->trade; ?></td>
-      <td><?php echo $rows->max; ?></td>
-      <td><?php echo $rows->min; ?></td>
+      <td><?php echo "US$" . number_format( $rows->valor, '2',',','.');?></td>
+   
       <td><?php echo date('d/m/Y', strtotime($rows->data));?></td>
 
  

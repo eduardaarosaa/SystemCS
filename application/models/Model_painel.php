@@ -173,6 +173,11 @@ public function media_indice(){
   return $this->db->query("Select AVG(PRECO) FROM dados where yearweek(data) = yearweek(now())-1")->result();
 }
 
-
+public function extrato_internacional(){
+  return $this->db->query("Select * from bitstamp where yearweek(data) = yearweek(now())-1")->result();
+}
+public function gerar_inteligencia(){
+  return $this->db->query("Select * from indice where data > (Now() - interval 7 DAY)")->result();
+}
     }
     

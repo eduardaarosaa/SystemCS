@@ -21,14 +21,18 @@ print( "=====================\n" );
 $vol = $exchanges->{$key}->vol;
 $last = $exchanges->{$key}->last;
 $trade = $exchanges->{$key}->trades;
+$max = $exchanges->{$key}->high;
+$min = $exchanges->{$key}->low;
 
 print( " Vol: " . $vol . "\n" );
 print( " Last: " . $last . "\n" );
 print("trades:" . $trade. "\n");
+print("max:" . $max. "\n");
+print("min:" . $min. "\n");
 
 print("\n");
 
-$inserir = "insert into dados (nome,volume,preco,trade) values ('$key','$vol','$last','$trade')";
+$inserir = "insert into dados (nome,volume,preco,trade,max,min) values ('$key','$vol','$last','$trade','$max','$min')";
 mysqli_query($link,$inserir);
 }
 

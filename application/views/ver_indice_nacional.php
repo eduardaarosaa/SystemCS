@@ -24,7 +24,7 @@
       <?php 
 
       foreach ($dados as $rows){ ?> 
-      <td><?php echo "R$" . number_format( $rows->valor, '2',',','.');?></td>
+      <td><?php echo "R$" . number_format($rows->valor,'2',',','.');?></td>
       <td><?php echo date('d/m/Y H:i:s', strtotime($rows->data));?></td>
 
  
