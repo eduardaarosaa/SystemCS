@@ -19,9 +19,14 @@ foreach($array as $row){
     $row['data'];
 
   //echo $pagina . "<br>";
+
+  $string = print_r($pagina);
+
+  //echo $string;
 }
 
-    echo $pagina;
+    echo $string;
+    //echo ($pagina);
 
 
 
@@ -30,7 +35,7 @@ foreach($array as $row){
     //$mpdf = new \Mpdf\Mpdf();
     //$mpdf->WriteHTML(
        
-      // $pagina
+      //$string
    
 
     //);
