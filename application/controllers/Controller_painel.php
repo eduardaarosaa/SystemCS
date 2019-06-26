@@ -65,11 +65,18 @@ class controller_painel extends CI_Controller {
                                         
                 );
                 
-            
+            if($auth->nivel == 1){
             $media['media'] = $this->Model_painel->media();
 	         $this->session->set_userdata($sessao);
 	         $this->load->view('header',$sessao);
              $this->load->view('painel',$media);
+            }else{
+                $media['media'] = $this->Model_painel->media();
+                $this->session->set_userdata($sessao);
+                $this->load->view('header',$sessao);
+                $this->load->view('painel_user',$media);
+
+            }
 			
 
 			} else {
@@ -547,6 +554,12 @@ public function addleads(){
         $dados['dados'] = $this->Model_painel->gerar_inteligencia();
         //$this->load->view("header");
         $this->load->view('resultado_mercado',$dados);
+
+    }
+    
+    public function painel_user(){
+        $this->load->view("header");
+        $this->load->view("painel_user");
 
     }
 
